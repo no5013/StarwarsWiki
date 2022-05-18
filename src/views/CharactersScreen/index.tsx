@@ -1,17 +1,26 @@
-import React from "react"
-import { Image, ScrollView, View } from "react-native"
-import { Headline, List, Title } from "react-native-paper"
-import { SafeAreaView } from "react-native-safe-area-context"
-import ContentCard from "../../components/ContentCard"
-import { Container } from "./styled"
+import React, { useEffect, useState } from "react"
+import { Text, View } from "react-native"
+import { getPeopleAPI } from "../../api/people"
+import { People } from "../../api/people/types"
 
 const CharactersScreen = () => {
+    const [people, setPeople] = useState([] as People[]) 
+
+    useEffect(() => {
+
+        getPeopleAPI().then((resp) => {
+           setPeople(resp.data.results)
+        })
+
+    }, [])
+
     return (
-        <Container>
-            <Title>
-                Characters
-            </Title>
-        </Container>
+        <View>
+            {people.map(p => 
+            <Text key={p.name}>
+                {p.name}
+            </Text>)}
+        </View>
     )
 }
 

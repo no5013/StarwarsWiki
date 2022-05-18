@@ -60,16 +60,6 @@ const App = () => {
       </SafeAreaProvider>
     </PaperProvider>
   );
-  // return (
-  //   // <PaperProvider>
-  //     <SafeAreaView style={backgroundStyle}>
-  //       {/* <NavigationContainer> */}
-  //         {/* <Routes /> */}
-  //         <HomeScreen />
-  //       {/* </NavigationContainer> */}
-  //     </SafeAreaView>
-  //   // </PaperProvider>
-  // );
 };
 
 const styles = StyleSheet.create({

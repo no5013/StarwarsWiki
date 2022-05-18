@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react"
 import { Image, ScrollView, View } from "react-native"
 import { Headline, List, Title } from "react-native-paper"
 import { SafeAreaView } from "react-native-safe-area-context"
-import { getPeople } from "../../api/people"
 import { People } from "../../api/people/types"
 import ContentCard from "../../components/ContentCard"
 import { ContentListItem, Header, StyledScrollView } from "./styled"
@@ -11,6 +10,8 @@ import { ContentListItem, Header, StyledScrollView } from "./styled"
 const HomeScreen = () => {
     const navigation = useNavigation()
     
+    console.log('HELLO')
+
     return (
         <StyledScrollView>
             <ContentListItem>

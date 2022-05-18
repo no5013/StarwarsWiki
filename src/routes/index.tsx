@@ -5,6 +5,7 @@ import SplashScreen from "../views/SplashScreen";
 import CharactersScreen from "../views/CharactersScreen";
 import SpeciesScreen from "../views/SpeciesScreen";
 import StarshipsScreen from "../views/StarshipsScreen";
+import { Text, View } from "react-native";
 
 const Stack = createNativeStackNavigator();
 

@@ -10,7 +10,7 @@ import { ContentListItem, Header, StyledScrollView } from "./styled"
 const HomeScreen = () => {
     const navigation = useNavigation()
     
-    console.log('HELLO')
+    console.log('HELLO WORLD')
 
     return (
         <StyledScrollView>

@@ -7,6 +7,8 @@ import SpeciesScreen from "../views/SpeciesScreen";
 import StarshipsScreen from "../views/StarshipsScreen";
 import { Text, View } from "react-native";
 import StarshipsDetailScreen from "../views/StarshipsDetailScreen";
+import SpecieDetailScreen from "../views/SpecieDetailScreen";
+import CharacterDetailScreen from "../views/CharacterDetailScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +22,7 @@ const Routes = () => {
                 headerTitle: 'Main Menu'
             }} name="Home" component={HomeScreen} />
             <Stack.Screen name="Characters" component={CharactersScreen} />
+            <Stack.Screen name="CharacterDetail" component={CharacterDetailScreen} />
             <Stack.Screen name="Starships" component={StarshipsScreen} />
             <Stack.Screen name="Species" component={SpeciesScreen} />
             <Stack.Screen name="StarshipsDetail" component={StarshipsDetailScreen} options={{
@@ -27,6 +30,7 @@ const Routes = () => {
                 headerTitle: '',
                 headerTintColor: 'white'
             }}/>
+            <Stack.Screen name="Specie Detail" component={SpecieDetailScreen} />
         </Stack.Navigator>
     )
 }

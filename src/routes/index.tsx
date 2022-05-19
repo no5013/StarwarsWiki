@@ -6,6 +6,7 @@ import CharactersScreen from "../views/CharactersScreen";
 import SpeciesScreen from "../views/SpeciesScreen";
 import StarshipsScreen from "../views/StarshipsScreen";
 import { Text, View } from "react-native";
+import SpecieDetailScreen from "../views/SpecieDetailScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ const Routes = () => {
             <Stack.Screen name="Characters" component={CharactersScreen} />
             <Stack.Screen name="Starships" component={StarshipsScreen} />
             <Stack.Screen name="Species" component={SpeciesScreen} />
+            <Stack.Screen name="Specie Detail" component={SpecieDetailScreen} />
         </Stack.Navigator>
     )
 }

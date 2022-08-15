@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof TargetComponent>;
 
 export const CharacterCard: ComponentStory<typeof TargetComponent> = args => (
-  <CharacterCard {...args} />
+  <TargetComponent {...args} />
 );
 
 CharacterCard.args = {

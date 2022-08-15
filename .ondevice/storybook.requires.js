@@ -33,6 +33,8 @@ const getStories = () => {
   return [
     require("../components/Button/Button.stories.tsx"),
     require("../components/Button2/Button2.stories.tsx"),
+    require("../components/Button3/Button3.stories.tsx"),
+    require("../components/CharacterCard/CharacterCard.stories.tsx"),
   ];
 };
 
